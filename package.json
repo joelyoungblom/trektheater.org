@@ -1,0 +1,31 @@
+{
+  "name": "trektheater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^6.1.0",
+    "stylus": "^0.54.7"
+  },
+  "scripts": {
+    "_build:css": "stylus src/main.styl -o dst/styles.css",
+    "serve": "browser-sync start --server --files '*.html, *.css'",
+    "_serve": "browser-sync start --server --files '*.html, dst/*'",
+    "_watch:css": "onchange 'src/*.styl' -- npm run build:css",
+    "_watch:all": "npm-run-all --parallel serve watch:**",
+    "_postinstall": "npm run watch:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelyoungblom/trektheater.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelyoungblom/trektheater/issues"
+  },
+  "homepage": "https://github.com/joelyoungblom/trektheater#readme"
+}
