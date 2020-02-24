@@ -43,10 +43,7 @@ html {
 }
 
 .btn {
-  text-decoration: none;
-  border-radius: 5px;
-  padding: var(--padding);
-  border: 2px dotted var(--c5);
+  text-decoration: underline overline double;
   color: var(--c5);
 }
 .btn * {
