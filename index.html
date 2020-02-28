@@ -7,7 +7,7 @@
     <title>Trek Theater</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
-<style>
+    <style>
 
 
 /* variables */
@@ -32,6 +32,9 @@ html {
   background: var(--main-bg-color);
   color: white;
 }
+html a {
+  color: var(--c3);
+}
 
 .site-header {
   text-transform: uppercase;
@@ -46,6 +49,7 @@ html {
   text-transform: uppercase;
   clear: both;
   color: var(--c5);
+  margin: 0;
 }
 
 .site-header__menu {
@@ -62,37 +66,44 @@ html {
 .btn * {
   color: inherit;
 }
-      /* debug */
-      /*
-      html {
-      padding-top: 17rem;
-      }
+.presents {
+  text-align: center;
+}
+
+/* debug */
+/*
+html {
+  padding-top: 17rem;
+}
 */
-</style>
+
+    </style>
 
   </head>
   <body>
 
     <header class="site-header">
+      <nav class="site-header__menu"><a class="btn" href="https://www.gofundme.com/f/trek-theatre039s-2019-season">Donate</a></nav>
       <h1 class="site-header__title">Trek Theater</h1>
+      <p class="presents">presents&hellip;</p>
     </header>
 
     <main>
 
-      <h2>The Outcast</h2>
-      <p>Trek Theater’s spring show presents a twist on the classic TNG episode: The Outcast.</p>
+    <h2>The Outcast</h2>
+    <p>Trek Theater’s spring show presents a twist on the classic TNG episode: The Outcast.</p>
 
-      <p>Commander Riker has fallen for Soren, an alien of a society that doesn't recognize gender. Will their forbidden love threaten her person-hood and his career?</p>
+    <p>Commander Riker has fallen for Soren, an alien of a society that doesn't recognize gender. Will their forbidden love threaten her person-hood and his career?</p>
 
-      <h3>Performances</h3>
-      <ul>
-        <li>Saturday, March 21, 2020, 7pm; Spectrum Bar</li>
-        <li>Sunday, March 22, 2020, 12pm &amp; 2pm; Spectrum Bar</li>
-        <li>Saturday, March 28, 2020, 5pm &amp; 7pm; UO Pocket Playhouse</li>
-        <li>Sunday, March 29, 2020, 5pm &amp; 7pm; UO Pocket Playhouse</li>
-      </ul>
+    <h3>Performances</h3>
+    <ul>
+      <li>Saturday, March 21, 2020, 7pm; Spectrum Bar</li>
+      <li>Sunday, March 22, 2020, 12pm &amp; 2pm; Spectrum Bar</li>
+      <li>Saturday, March 28, 2020, 5pm &amp; 7pm; UO Pocket Playhouse</li>
+      <li>Sunday, March 29, 2020, 5pm &amp; 7pm; UO Pocket Playhouse</li>
+    </ul>
 
-<p>All performances are free and family friendly!</p>
+    <p>All performances are free and family friendly!</p>
 
     </main>
 
@@ -105,17 +116,16 @@ html {
       <a href="mailto:info+www@trektheater.org">Email</a>
       </p>
 
-      <p>&copy; Trek Theater. All rights reserved.</p>
     </footer>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156422602-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-      gtag('config', 'UA-156422602-1');
+gtag('config', 'UA-156422602-1');
     </script>
   </body>
 </html>
