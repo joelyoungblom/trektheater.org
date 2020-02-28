@@ -4,24 +4,71 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Eugene Trek Theater</title>
+    <title>Trek Theater</title>
 
-    <style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+<style>
 
-* {
-  font: 100%/1.5 sans-serif;
+
+/* variables */
+:root {
+  /* colors.co palette */
+  --c1: #1A181B; /* eerie black */
+  --c2: #564D65; /* independence */
+  --c3: #3E8989; /* teal blue */
+  --c4: #2CDA9D; /* eucalyptus */
+  --c5: #05F140; /* malachite */
+
+  --main-bg-color: var(--c1);
+  --main-fg-color: white;
+
+  /* spacing */
+  --padding: .25em;
+  --margin: .5em;
 }
-.show-title {
+
+html {
+  font-family: sans-serif;
+  background: var(--main-bg-color);
+  color: white;
+}
+
+.site-header {
   text-transform: uppercase;
-  background: orange;
+  font-family: 'Roboto Condensed', sans-serif;
 }
-.the {
-  display: block;
-  position: relative;
-  font: 200%/0;
+
+.site-header__title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15.9vw;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  clear: both;
+  color: var(--c5);
 }
-.outcast {
+
+.site-header__menu {
+  float: right;
 }
+
+.btn {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: var(--padding);
+  border: 2px dotted var(--c5);
+  color: var(--c5);
+}
+.btn * {
+  color: inherit;
+}
+      /* debug */
+      /*
+      html {
+      padding-top: 17rem;
+      }
+*/
+</style>
 
     </style>
   </head>
@@ -34,44 +81,34 @@
 
     <main>
 
-    <h2 class="show-title">
-      <span class="the">The</span> 
-      <span class="outcast">Outcast</span>
-    </h2>
+      <h2>The Outcast</h2>
+      <p>Trek Theater’s spring show presents a twist on the classic TNG episode: The Outcast.</p>
 
-    <h3 class="performances">Performances</h3>
-    
-    <p>Spectrum Bar<br>
-    150 W Broadway</p>
+      <p>Commander Riker has fallen for Soren, an alien of a society that doesn't recognize gender. Will their forbidden love threaten her person-hood and his career?</p>
 
-    <p>March 21, 2020
-    7pm show
-    8pm talkback
+      <h3>Performances</h3>
+      <ul>
+        <li>Saturday, March 21, 2020, 7pm; Spectrum Bar</li>
+        <li>Sunday, March 22, 2020, 12pm &amp; 2pm; Spectrum Bar</li>
+        <li>Saturday, March 28, 2020, 5pm &amp; 7pm; UO Pocket Playhouse</li>
+        <li>Sunday, March 29, 2020, 5pm &amp; 7pm; UO Pocket Playhouse</li>
+      </ul>
 
-    <p>March 22, 2020
-    12pm show
-    2pm show
-
-    <p>UO Pocket Playhouse
-    Villard Hall; 1109 Old Campus Lane
-
-    <p>March 28, 2020
-    5pm show
-    7pm show
-
-    <p>March 29, 2020
-    12pm show
-    2pm show
-
-    <p>All shows are free and family friendly.</p>
+<p>All performances are free and family friendly!</p>
 
     </main>
 
     <footer class="site-footer">
-      <section id="about">
-        <h3>Our Story</h3>
-        <p>The mission of Trek Theatre is to develop an appreciation of science fiction through theatre and of theatre through science fiction and explore the potential of both as instruments of social change by providing free performances of science fiction to the community.</p>
-      </section>
+      <p>Contact us: 
+      <a href="//facebook.com/trektheater">Facebook</a> | 
+      <a href="//twitter.com/trektheater">Twitter</a> | 
+      <a href="//intagram.com/trektheater">Instagram</a> | 
+      <a href="//youtube.com/trektheater">YouTube</a> | 
+      <a href="mailto:info+www@trektheater.org">Email</a>
+      </p>
+
+      <p>&copy; Trek Theater. All rights reserved.</p>
+    </footer>
 
       <nav id="social">
         <a href="//facebook.com/trektheater">Facebook</a>
