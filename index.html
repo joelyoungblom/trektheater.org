@@ -6,9 +6,10 @@
 
     <title>Trek Theater</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
-    <style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+    <style>
 
 /* variables */
 :root {
@@ -43,7 +44,7 @@ html a {
 
 .site-header__title {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 15.9vw;
+  font-size: 9vw;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
@@ -70,6 +71,18 @@ html a {
   text-align: center;
 }
 
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-position: right;
+  /*
+  background-image: url("promo2.jpg");
+  */
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
 /* debug */
 /*
 html {
@@ -77,38 +90,53 @@ html {
 }
 */
 
+.hidden
+{position:absolute;
+  left:-10000px;
+    top:auto;
+      width:1px;
+        height:1px;
+        overflow:hidden;}
+
+figure img {
+  display: block;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+body {
+  padding: 2rem;
+}
+
+.letter__signature {
+  font-family: cursive;
+}
+
     </style>
 
   </head>
   <body>
 
     <header class="site-header">
-      <nav class="site-header__menu"><a class="btn" href="https://www.gofundme.com/f/trek-theatre039s-2019-season">Donate</a></nav>
+      <nav class="site-header__menu"><a class="btn" href="//gofundme.com/f/trek-theatre039s-2019-season">Donate</a></nav>
       <h1 class="site-header__title">Trek Theater</h1>
-      <p class="presents">presents&hellip;</p>
     </header>
 
-    <main>
+    <main class="letter">
 
-    <h2>The Outcast</h2>
-    <p>Trek Theater’s spring show presents a twist on the classic TNG episode: The Outcast.</p>
+    <figure>
+      <img src="promo1.jpg">
+    </figure>
 
-    <p>Commander Riker has fallen for Soren, an alien of a society that doesn't recognize gender. Will their forbidden love threaten her person-hood and his career?</p>
-
-    <h3>Performances</h3>
-    <ul>
-      <li>Saturday, March 21, 2020, 7pm; Spectrum Bar</li>
-      <li>Sunday, March 22, 2020, 12pm &amp; 2pm; Spectrum Bar</li>
-      <li>Saturday, March 28, 2020, 5pm &amp; 7pm; UO Pocket Playhouse</li>
-      <li>Sunday, March 29, 2020, 5pm &amp; 7pm; UO Pocket Playhouse</li>
-    </ul>
-
-    <p>All performances are free and family friendly!</p>
+    <p class="letter__salutation">Friends and fans of Trek Theater,</p>
+    <p>It is with heavy heart that we have decided to postpone our Spring show, The Outcast, due to COVID-19. </p>
+    <p>You know that Trek Theater would (and has) performed in pouring rain, extreme heat, and very poor air quality but we will not perform knowing that we may be putting our audience at risk. </p>
+    <p>We will keep you updated, be sure to keep an eye on our social media pages for more news.</p>
+    <p class="letter__signature">Trek Theater</p>
 
     </main>
 
     <footer class="site-footer">
-      <p>Contact us: 
+      <p><span class="hidden">Contact us: </span>
       <a href="//facebook.com/trektheater">Facebook</a> | 
       <a href="//twitter.com/trektheater">Twitter</a> | 
       <a href="//intagram.com/trektheater">Instagram</a> | 
