@@ -6,9 +6,6 @@
 
     <title>Trek Theater</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
     <style>
 
 /* variables */
@@ -33,28 +30,28 @@ html {
   background: var(--main-bg-color);
   color: white;
 }
-html a {
+a {
   color: var(--c3);
+}
+figure img { 
+  width: 100%;
+  height: auto;
 }
 
 .site-header {
   text-transform: uppercase;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: sans-serif;
 }
 
 .site-header__title {
-  font-family: 'Roboto Condensed', sans-serif;
   font-size: 9vw;
   text-align: center;
-  font-weight: 700;
-  text-transform: uppercase;
-  clear: both;
   color: var(--c5);
   margin: 0;
 }
 
 .site-header__menu {
-  float: right;
+  text-align: right;
 }
 
 .btn {
@@ -64,24 +61,19 @@ html a {
   border: 2px dotted var(--c5);
   color: var(--c5);
 }
-.btn * {
-  color: inherit;
-}
-.presents {
-  text-align: center;
+
+.letter__signature {
+  font-family: cursive;
 }
 
-body {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  background-position: right;
-  /*
-  background-image: url("promo2.jpg");
-  */
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-}
+/* utility classes */
+.hidden
+  {position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;}
 
 /* debug */
 /*
@@ -89,28 +81,6 @@ html {
   padding-top: 17rem;
 }
 */
-
-.hidden
-{position:absolute;
-  left:-10000px;
-    top:auto;
-      width:1px;
-        height:1px;
-        overflow:hidden;}
-
-figure img {
-  display: block;
-  max-width: 30rem;
-  margin: 0 auto;
-}
-body {
-  padding: 2rem;
-}
-
-.letter__signature {
-  font-family: cursive;
-}
-
     </style>
 
   </head>
@@ -124,8 +94,10 @@ body {
     <main class="letter">
 
     <figure>
-      <img src="promo1.jpg">
+      <img alt="Soren being forcibly escorted away by guards" src="promo1.jpg">
     </figure>
+
+    <p>March 11, 2020</p>
 
     <p class="letter__salutation">Friends and fans of Trek Theater,</p>
     <p>It is with heavy heart that we have decided to postpone our Spring show, The Outcast, due to COVID-19. </p>
