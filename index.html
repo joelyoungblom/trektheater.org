@@ -33,6 +33,9 @@ html {
 a {
   color: var(--c3);
 }
+figure {
+  margin: 0;
+}
 figure img { 
   width: 100%;
   height: auto;
@@ -44,7 +47,7 @@ figure img {
 }
 
 .site-header__title {
-  font-size: 9vw;
+  font-size: 12vw;
   text-align: center;
   color: var(--c5);
   margin: 0;
@@ -82,7 +85,7 @@ html {
 }
 */
     </style>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
 
@@ -108,14 +111,14 @@ html {
     </main>
 
     <footer class="site-footer">
-      <p><span class="hidden">Contact us: </span>
-      <a href="//facebook.com/trektheater">Facebook</a> | 
-      <a href="//twitter.com/trektheater">Twitter</a> | 
-      <a href="//intagram.com/trektheater">Instagram</a> | 
-      <a href="//youtube.com/trektheater">YouTube</a> | 
-      <a href="mailto:info+www@trektheater.org">Email</a>
-      </p>
-
+      <p><span class="hidden">Contact us: </span></p>
+      <nav class="site-footer__social">
+        <a href="//facebook.com/trektheater"><i class="fa fa-facebook-official"> Facebook</i></a> 
+        <a href="//twitter.com/trektheater"><i class="fa fa-twitter"> Twitter</i></a> 
+        <a href="//intagram.com/trektheater"><i class="fa fa-instagram"> Instagram</i></a> 
+        <a href="//youtube.com/trektheater"><i class="fa fa-youtube"> YouTube</i></a> 
+        <a href="mailto:info+www@trektheater.org"><i class="fa fa-envelope"> Email</i></a>
+      </nav>
     </footer>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
