@@ -16,13 +16,6 @@
   --c3: #e9c46a; /* yellowish */
   --c4: #f4a261; /* orangish */
   --c5: #e76f51; /* reddish */
-
-  --main-bg-color: var(--c1);
-  --main-fg-color: white;
-
-  /* spacing */
-  --padding: .5em;
-  --margin: 1em;
 }
 
 html {
@@ -38,27 +31,13 @@ a {
   color: white;
 }
 
-/*
-.video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: -1;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
-}
-*/
-
 video {
   min-width: 100%;
   min-height: 100%;
   position: fixed;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,0);
   z-index: -1;
 }
 
@@ -96,18 +75,7 @@ header nav {
   font-size: 2.7vw;
 }
 
-/* utility classes */
-.hidden {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
-
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
 
