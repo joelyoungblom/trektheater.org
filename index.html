@@ -4,31 +4,110 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Trek Theater</title>
+    <title>Trouble with Tribbles, presented by Trek Theater</title>
 
     <style>
 
 /* variables */
 :root {
-  /* coolors.co palette */
-  --c1: #264653; /* grayish */
-  --c2: #2a9d8f; /* greenish */
-  --c3: #e9c46a; /* yellowish */
-  --c4: #f4a261; /* orangish */
-  --c5: #e76f51; /* reddish */
+
+  --poster-dark-green: #313f19;
+  --poster-light-green: #c5d86c;
+
 }
 
-html {
-  font-family: sans-serif;
-  background: var(--main-bg-color);
-  color: white;
-}
-body {
+html, body {
+  height: 100%;
   margin: 0;
+  font-family: sans-serif;
+}
+* {
   box-sizing: border-box;
 }
-a {
+.bg-image {
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg01 { background-image: url("tribble01.jpg"); }
+.bg02 { background-image: url("tribble02.jpg"); }
+.bg03 { background-image: url("tribble03.jpg"); }
+.bg04 { background-image: url("tribble04.jpg"); }
+.bg05 { background-image: url("tribble05.jpg"); }
+.bg06 { background-image: url("tribble06.jpg"); }
+.bg07 { background-image: url("tribble07.jpg"); }
+.bg08 { background-image: url("tribble08.jpg"); }
+.bg09 { background-image: url("tribble09.jpg"); }
+.bg10 { background-image: url("tribble10.jpg"); }
+.bg11 { background-image: url("tribble11.jpg"); }
+.bg12 { background-image: url("tribble12.jpg"); }
+.bg13 { background-image: url("tribble13.jpg"); }
+.bg14 { background-image: url("tribble14.jpg"); }
+.bg15 { background-image: url("tribble15.jpg"); }
+.bg16 { background-image: url("tribble16.jpg"); }
+.bg17 { background-image: url("tribble17.jpg"); }
+.bg18 { background-image: url("tribble18.jpg"); }
+.bg19 { background-image: url("tribble19.jpg"); }
+.bg20 { background-image: url("tribble20.jpg"); }
+.bg21 { background-image: url("tribble21.jpg"); }
+.bg22 { background-image: url("tribble22.jpg"); }
+.bg23 { background-image: url("tribble23.jpg"); }
+.bg24 { background-image: url("tribble24.jpg"); }
+.bg25 { background-image: url("tribble25.jpg"); }
+
+.bg-text {
+  background-color: rgb( 0, 0, 0 ); /* fallback */
+  background-color: rgb( 0, 0, 0, 0.9 );
   color: white;
+  font-weight: bold;
+  font-size: calc( 80% + 1.5vw );
+  border: 1vw solid darkgray;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+  z-index: 2;
+  width: 80%;
+  padding: 3vw;
+  text-align: center;
+  max-width: 40rem;
+}
+
+h1 {
+  font-size: 100%;
+  margin-top: 0;
+  margin-bottom: .5em;
+}
+.title {
+  font-size: 1.5em;
+}
+.title:before {
+  content: '\A';
+  display: block;
+}
+
+.logo {
+  white-space: nowrap;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: calc( 70% + .25vw );
+  text-transform: uppercase;
+}
+
+.slogan {
+  font-style: italic;
+}
+
+a { color: white; }
+
+/*
+a {
+  color: var(--main-fg-color);
 }
 
 video {
@@ -69,32 +148,58 @@ h1 {
   font-size: 7vw;
 }
 
-header nav {
-  display: flex;
-  justify-content: space-between;
-  font-size: 2.7vw;
+*/
+
+@media ( max-height: 400px ) {
+  .bg-text {
+    height: 100%;
+    width: 100%;
+  }
+  br {
+    display: none;
+  } 
+  .details {
+    margin: 0;
+  }
+  h1 {
+    margin: 0 0 .5em;
+  }
 }
 
     </style>
   </head>
   <body>
 
-    <header>
-      <p>Trek Theater presents</p>
-      <h1>The Loss</h1>
-      <p><a href="//youtu.be/98iQNm-q7K4">Watch Now</a></p>
-      <nav>
-        <a href="//facebook.com/TrekTheater">Facebook</a>
-        <a href="//gofund.me/b8e6a8cf">Support Us</a>
-      </nav>
-    </header>
+    <div class="bg-image bg04"></div>
+    <div class="bg-image bg01"></div>
+    <div class="bg-image bg06"></div>
+    <div class="bg-image bg12"></div>
+    <div class="bg-image bg21"></div>
+    
+    <div class="bg-text">
+      <header>
+        <h1>
+          <span class="logo">Trek Theater</span> presents 
+          <span class="title">Trouble with Tribbles</span>
+        </h1>
+      </header>
 
-    <video class="video" loop autoplay muted playsinline>
-      <source src="loss.webm" type='video/webm; codecs="vp8, vorbis"' />
-      <source src="loss.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-      <source src="loss.ogv" type='video/ogg; codecs="theora, vorbis"' />
-      <img src="loss.jpg">
-    </video>
+      <main>
+        <p class="details">July 16, 17, 23, 24
+        <br>5pm at Amazon Community Center</p>
+        <p class="details">August 6
+        <br>3pm at Irving Grange</p>
+        <p class="slogan">All shows outdoors, free, and family friendly!</p>
+      </main>
+
+      <footer>
+        <nav>
+          <a href="//fb.me/e/1i7hsQSXj">More info on Facebook</a>
+          <a href="//gofund.me/b8e6a8cf">Support Us</a>
+        </nav>
+      </footer>
+
+    </div>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156422602-1"></script>
