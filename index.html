@@ -4,127 +4,90 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Trouble with Tribbles, presented by Trek Theater</title>
+    <title>Trek Theater: Who Watches The Watchers</title>
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 
     <style>
 
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: sans-serif;
+html {
+  background: rgba(0,0,0,0.8);
+  font: 100% sans-serif;
 }
-* {
-  box-sizing: border-box;
+body {
+  max-width: 35em;
+  margin: auto;
+  padding: 2em;
+  background: white;
+  box-shadow: 0 0 1rem black;
 }
-.bg-image {
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bg01 { background-image: url("tribble01.jpg"); }
-.bg04 { background-image: url("tribble04.jpg"); }
-.bg06 { background-image: url("tribble06.jpg"); }
-.bg12 { background-image: url("tribble12.jpg"); }
-.bg21 { background-image: url("tribble21.jpg"); }
-
-.bg-text {
-  background-color: rgb( 0, 0, 0 ); /* fallback */
-  background-color: rgb( 0, 0, 0, 0.6 );
-  color: white;
+.logo {
+  font-size: 1.2rem;
   font-weight: bold;
-  font-size: calc( 80% + 1.5vw );
-  border: 1vw solid darkgray;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate( -50%, -50% );
-  z-index: 2;
-  width: 80%;
-  padding: 3vw;
-  text-align: center;
+  white-space: nowrap;
 }
-
 h1 {
-  font-size: 100%;
   margin-top: 0;
   margin-bottom: .5em;
+  text-align: center;
+  color: #222;
 }
-.title {
-  font-size: 1.5em;
+nav {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+  line-height: 1.5em;
+}
+header h1 {
+  color: midnightblue;
+  font-weight: bolder;
+  font-size: clamp(1rem, 12.6vw, 5.3rem);
+  line-height: .8em;
+  text-shadow: 0 0 3px #333;
 }
 .title:before {
   content: '\A';
   display: block;
 }
 
-.logo {
-  white-space: nowrap;
-}
-
-footer nav {
-  display: flex;
-  justify-content: space-between;
-  font-size: calc( 70% + .25vw );
-  text-transform: uppercase;
-}
-
-.slogan {
-  font-style: italic;
-}
-
-a { color: white; }
-
-@media ( max-height: 540px ) {
-  .bg-text {
-    border: none;
-    height: 100%;
-    width: 100%;
-  }
-  br {
-    display: none;
-  } 
-  .details {
-    margin: 0;
-  }
-  h1 {
-    margin: 0 0 .5em;
-  }
-}
-
     </style>
   </head>
   <body>
 
-    <div class="bg-image bg04"></div>
-    <div class="bg-image bg01"></div>
-    <div class="bg-image bg06"></div>
-    <div class="bg-image bg12"></div>
-    <div class="bg-image bg21"></div>
-    
-    <div class="bg-text">
-      <header>
-        <h1>
-          <span class="logo">Trek Theater</span> presents 
-          <span class="title">2<sup>nd</sup> Annual Trekkin in Eugene</span>
-        </h1>
-      </header>
+    <header>
+      <p><span class="logo">Trek Theater</span> announces</p>
+      <h1>Who Watches The Watchers</h1>
+    </header>
 
-      <main>
-        <p class="details">August 6, 9am&ndash;5pm at <a href="//goo.gl/maps/3no6yxwRxM3zqX1bA">Irving Grange</a>
-        <br>Silent auction, art, costume contest, and much more!</p>
-        <p><strong>Last chance to see performance of the popular vintage episode <em>Trouble with Tribbles</em> at 3pm</strong></p>
-      </main>
+    <main>
 
-      <footer>
-        <nav>
-          <a href="//facebook.com/events/707157847158041">More info on Facebook</a>
-          <a href="//account.venmo.com/u/TrekTheater">Support Us</a>
-        </nav>
-      </footer>
+      <h2>Auditions</h2>
+      <p>April 8 &amp; 9 from 1pm &ndash; 3pm in the Gazebo at the Owen Rose Garden.</p>
+      <p>No need to prep for auditions! There are a variety of ways to participate. In addition to actors, we are also looking for understudies, prop/set builders, makeup artists, and costume makers.</p>
 
-    </div>
+      <h2>Rehearsals</h2>
+      <p>Monday, Tuesday, Thursday, and Friday evenings starting Monday, May 15.</p>
+      <p>Rehearsals will be at Amazon Park. Not every actor will need to be present at every rehearsal.</p>
+
+      <h2>Performances</h2>
+      <p>July 8, 9, 15, &amp; 16 at Amazon Park</p>
+
+      <h2>COVID-19 Safety</h2>
+      <p>We take COVID-19 seriously! Please bring a face mask and proof of vaccination.</p>
+      <p>Ideally we want everyone to be fully boosted with the latest bivalent booster. If that is not a possibility, please bring proof of medical exemption.</p>
+
+      <h2>About Us</h2>
+      <p>The mission of Trek Theater is to develop an appreciation of science fiction through theater and of theater through science fiction and explore the potential of both as instruments of social change by providing free performances of science fiction to the community.</p>
+      <p><a href="//m.me/TrekTheater">Message us on Facebook with any questions!</a></p>
+
+    </main>
+
+    <footer>
+      <nav>
+        <a href="//facebook.com/TrekTheater">facebook.com/TrekTheater</a>
+        <a href="//venmo.com/TrekTheater">venmo.com/TrekTheater</a>
+      </nav>
+    </footer>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156422602-1"></script>
